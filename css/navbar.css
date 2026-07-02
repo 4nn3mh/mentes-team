@@ -1,0 +1,94 @@
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#34495e;
+    padding:12px 25px;
+}
+
+.logo{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:8px;
+    transition:.3s;
+    display:block;
+}
+
+.menu a:hover{
+    background:#1abc9c;
+}
+
+/* Dropdown */
+.submenu{
+    display:none;
+    position:absolute;
+    top:45px;
+    left:0;
+    background:#2c3e50;
+    min-width:180px;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.dropdown.active .submenu{
+    display:block;
+}
+
+.submenu a{
+    padding:12px;
+}
+
+/* Botón móvil */
+.toggle{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+    .toggle{
+        display:block;
+    }
+    .menu{
+        display:none;
+        position:absolute;
+        top:70px;
+        right:15px;
+        width:220px;
+        flex-direction:column;
+        background:#34495e;
+        border-radius:10px;
+        padding:10px;
+    }
+
+    .menu.show{
+        display:flex;
+    }
+
+    .submenu{
+        position:static;
+    }
+}

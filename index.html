@@ -1,12 +1,78 @@
-//Página informativa de MENTES-TEAM
+<!--Página informativa de MENTES-TEAM-->
+<!--index.html-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MENTES-TEAM</title>
+    <meta name="description" content="Sitio web de MenteS-TEAM">
+
+    <title>MenteS-TEAM</title>
+
+    <!--Acceso a css-->
+    <link rel = "stylesheet" href = "css/style.css">
+
+
 </head>
 <body>
+    <header>
+        <h1>MenteS-TEAM</h1>
+        <p>Somos ciencia y tecnología</p>
+    </header>
+
+    <nav class="navbar">
+        <div class="logo">MenteS-TEAM</div>
+
+        <!-- botón hamburguesa que despliega opciones -->
+        <button class="toggle" onclick="toggleMenu()">☰</button>
+
+        <ul class="menu" id="menu">
+            <li><a href="#inicio">Inicio</a></li>
+
+            <li class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(event)">Nosotros ▾</button>
+
+                <ul class="submenu">
+                    <li><a href="#mision">Misión</a></li>
+                    <li><a href="#vision">Visión</a></li>
+                    <li><a href="#valores">Valores</a></li>
+                </ul>
+            </li>
+
+            <li><a href="gallery.html">Galería de fotos</li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <h2>¡Te damos la bienvenida!</h2>
+        <p>Este es el sitio oficial de MenteS-TEAM, donde compartimos ideas, proyectos y creatividad.</p>
+    </section>
+
+    <section id="mision">
+        <h2>Misión</h2>
+        <p>*Añadir misión</p>
+    </section>
+
+    <section id="vision">
+        <h2>Visión</h2>
+        <p>*Añadir visión</p>
+    </section>
+
+    <section id="valores">
+        <h2>Valores</h2>
+        <p>*Añadir valores</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>*Añadir datos de contacto</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MenteS-TEAM. Todos los derechos reservados.</p>
+    </footer>
     
+    <script src="js/navbar.js"></script>
 </body>
 </html>
