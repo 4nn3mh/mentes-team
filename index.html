@@ -11,6 +11,7 @@
 
     <!--Acceso a css-->
     <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href="css/navbar.css">
 
 
 </head>
@@ -21,7 +22,11 @@
     </header>
 
     <nav class="navbar">
-        <div class="logo">MenteS-TEAM</div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo_mentesteam.png" alt="Logo de MenteS-TEAM">
+            </a>
+        </div>
 
         <!-- botón hamburguesa que despliega opciones -->
         <button class="toggle" onclick="toggleMenu()">☰</button>
@@ -39,7 +44,7 @@
                 </ul>
             </li>
 
-            <li><a href="gallery.html">Galería de fotos</li>
+            <li><a href="gallery.html">Galería de fotos</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -74,5 +79,6 @@
     </footer>
     
     <script src="js/navbar.js"></script>
+    <script src="js/scroll_navbar.js"></script>
 </body>
 </html>

@@ -5,40 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería | MenteS-TEAM</title>
 
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/gallery.css">
 
 </head>
 <body>
-<header>
+    <header>
         <h1>MenteS-TEAM</h1>
         <p>Somos ciencia y tecnología</p>
     </header>
 
     <nav class="navbar">
-        <div class="logo">MenteS-TEAM</div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo_mentesteam.png" alt="Logo de MenteS-TEAM">
+            </a>
+        </div>
 
         <!-- botón hamburguesa que despliega opciones -->
         <button class="toggle" onclick="toggleMenu()">☰</button>
 
         <ul class="menu" id="menu">
-            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
 
             <li class="dropdown">
-                <a href="#" onclick="toggleDropdown(event)">Nosotros ▾</a>
+                <button class="dropdown-btn" onclick="toggleDropdown(event)">Nosotros ▾</button>
 
                 <ul class="submenu">
-                    <li><a href="#mision">Misión</a></li>
-                    <li><a href="#vision">Visión</a></li>
-                    <li><a href="#valores">Valores</a></li>
+                    <li><a href="index.html#mision">Misión</a></li>
+                    <li><a href="index.html#vision">Visión</a></li>
+                    <li><a href="index.html#valores">Valores</a></li>
                 </ul>
             </li>
-
-            <li><a href="galeria.html">Galería de fotos</li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
         </ul>
     </nav>
     
+    <div class="return-container">
+        <button class="return-btn" id="return-button">
+            ← Regresar
+        </button>
+    </div>
+
+    <div class="text-container">
+        <p>Da click sobre las imágenes para conocer la actividad que se realizó en cada una.</p>
+    </div>
+
 <main>
         <section class="galeria">
             <!-- Tarjeta 1 -->
@@ -149,6 +162,10 @@
     <footer>
         <p>&copy; 2026 MenteS-TEAM. Todos los derechos reservados.</p>
     </footer>
+
 <script src="js/navbar.js"></script>
+<script src="js/main.js"></script>
+<script src="js/scroll_navbar.js"></script>
+
 </body>
 </html>

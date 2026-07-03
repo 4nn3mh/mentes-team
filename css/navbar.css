@@ -4,15 +4,32 @@
     z-index:1000;
     display:flex;
     justify-content:space-between;
+    transition: all .3s ease;
     align-items:center;
     background:#34495e;
     padding:12px 25px;
+}
+
+.navbar.scrolled{
+    padding: 6px 20px;
+    background: rgba(44,62,80,.95);
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+    backdrop-filter: blur(8px);
 }
 
 .logo{
     color:white;
     font-size:22px;
     font-weight:bold;
+}
+
+.logo img{
+    height:55px;
+    transition:.3s;
+}
+
+.navbar.scrolled .logo img{
+    height:42px;
 }
 
 .menu{
@@ -63,7 +80,7 @@
     display:none;
     background:none;
     border:none;
-    color:white;
+    color:rgb(56, 9, 9);
     font-size:28px;
     cursor:pointer;
 }
