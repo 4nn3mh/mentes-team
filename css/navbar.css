@@ -1,111 +1,104 @@
+/* ===== NAVBAR ===== */
 .navbar{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    display:flex;
-    justify-content:space-between;
-    transition: all .3s ease;
-    align-items:center;
-    background:#34495e;
-    padding:12px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+    background: #dbdbdb;
+    transition: .3s;
 }
 
 .navbar.scrolled{
     padding: 6px 20px;
-    background: rgba(44,62,80,.95);
     box-shadow: 0 6px 20px rgba(0,0,0,.15);
-    backdrop-filter: blur(8px);
 }
 
-.logo{
-    color:white;
-    font-size:22px;
-    font-weight:bold;
-}
-
+/* ===== LOGO ===== */
 .logo img{
-    height:55px;
-    transition:.3s;
+    height: 55px;
+    display: block;
+    transition: .3s;
 }
 
 .navbar.scrolled .logo img{
-    height:42px;
+    height: 42px;
 }
 
+/* ===== MENÚ ===== */
 .menu{
-    display:flex;
-    gap:20px;
-    list-style:none;
-}
-
-.menu li{
-    position:relative;
+    display: flex;
+    gap: 20px;
+    list-style: none;
 }
 
 .menu a{
-    color:white;
-    text-decoration:none;
-    padding:10px 15px;
-    border-radius:8px;
-    transition:.3s;
-    display:block;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    transition: .3s;
 }
 
 .menu a:hover{
-    background:#1abc9c;
+    background: #ffbaba ;
 }
 
-/* Dropdown */
+/* ===== SUBMENÚ ===== */
+.menu li{
+    position: relative;
+}
+
 .submenu{
-    display:none;
-    position:absolute;
-    top:45px;
-    left:0;
-    background:#2c3e50;
-    min-width:180px;
-    border-radius:10px;
-    overflow:hidden;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background: #dbdbdb;
+    border-radius: 10px;
 }
 
 .dropdown.active .submenu{
-    display:block;
+    display: block;
 }
 
-.submenu a{
-    padding:12px;
-}
-
-/* Botón móvil */
+/* ===== BOTÓN MÓVIL ===== */
 .toggle{
-    display:none;
-    background:none;
-    border:none;
-    color:rgb(56, 9, 9);
-    font-size:28px;
-    cursor:pointer;
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
 }
 
-@media(max-width:768px){
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px){
+
     .toggle{
-        display:block;
+        display: block;
     }
+
     .menu{
-        display:none;
-        position:absolute;
-        top:70px;
-        right:15px;
-        width:220px;
-        flex-direction:column;
-        background:#34495e;
-        border-radius:10px;
-        padding:10px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 15px;
+        width: 220px;
+        padding: 10px;
+        background: #dbdbdb;
+        border-radius: 10px;
     }
 
     .menu.show{
-        display:flex;
+        display: flex;
     }
 
     .submenu{
-        position:static;
+        position: static;
     }
 }

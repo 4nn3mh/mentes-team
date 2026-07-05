@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | MenteS-TEAM</title>
+
+    <!--Acceso a css-->
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href="css/navbar.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo1">
+            <img src="images/logo_mentesteam.png" alt="Logo de MenteS-TEAM">
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo_mentesteam.png" alt="Logo de MenteS-TEAM">
+            </a>
+        </div>
+
+        <!-- botón hamburguesa que despliega opciones -->
+        <button class="toggle" onclick="toggleMenu()">☰</button>
+
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Inicio</a></li>
+
+            <li class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(event)">Nosotros ▾</button>
+
+                <ul class="submenu">
+                    <li><a href="index.html#mision">Misión</a></li>
+                    <li><a href="index.html#vision">Visión</a></li>
+                    <li><a href="index.html#valores">Valores</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Galería de fotos</a></li>
+        </ul>
+    </nav>
+    
+    <div class="return-container">
+        <a href="#" id="return-button" class="return-btn">
+            <img src="images/return_button.png" alt="Regresar">
+        </a>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2026 MenteS-TEAM. Todos los derechos reservados.</p>
+    </footer>
+
+<script src="js/navbar.js"></script>
+<script src="js/main.js"></script>
+<script src="js/scroll_navbar.js"></script>
+</body>
+</html>
