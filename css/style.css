@@ -27,7 +27,7 @@ body {
     height: auto;
     display: block;
     border-radius: 20px;
-    object-fit: cover;
+    object-fit: contain;
     box-shadow: 0 10px 25px rgba(0,0,0,.15);
     transition: transform .3s ease,
                 box-shadow .3s ease;
@@ -90,24 +90,26 @@ body {
 
 /* Estilo del botón de regreso */
 .return-container{
-    width:90%;
-    max-width:1200px;
-    margin:40px auto 20px;
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    z-index:999;
 }
 
 .return-btn{
-    display:inline-block;
+    display:block;
     transition:transform .2s ease;
 }
 
 .return-btn img{
-    width:55px;          /* Tamaño de la imagen */
+    width:clamp(32px, 4vw, 55px);
     height:auto;
     display:block;
+    transition:transform .2s ease;
 }
 
 .return-btn:hover{
-    transform:scale(1.08);
+    transform:scale(1.1);
 }
 
 .return-btn:active{
@@ -236,83 +238,6 @@ body {
   display: block;
 }
 
-@media (max-width:768px){
-    .hero-image{
-        width: 92%;
-        margin: 20px auto;
-    }
-
-    .hero-image img{
-        border-radius: 14px;
-    }
-    .navbar{
-        flex-wrap:wrap;
-    }
-
-    .toggle{
-        display:block;
-    }
-
-    .menu{
-        display:none;
-        width:100%;
-        flex-direction:column;
-        align-items:stretch;
-        gap:5px;
-        margin-top:10px;
-    }
-
-    .menu.show{
-        display:flex;
-    }
-
-    .menu a,
-    .dropdown-btn{
-        justify-content:flex-start;
-        width:100%;
-    }
-
-    .submenu{
-        position:static;
-        width:100%;
-        margin-top:5px;
-        border-radius:6px;
-        box-shadow:none;
-    }
-
-    .logo img{
-        height:45px;
-    }
-
-    .return-container{
-        width:95%;
-        margin:25px auto 15px auto;
-    }
-
-    .return-container{
-        width:95%;
-        margin:25px auto 15px;
-    }
-
-    .return-btn img{
-        width:45px;
-    }
-
-    .text-container-gallery{
-        width: 92%;
-        margin: 30px auto;
-    }
-
-    .text-container-gallery h2{
-        font-size: 1.8rem;
-    }
-
-    .text-container-gallery p{
-        font-size: 1rem;
-        line-height: 1.7;
-    }
-
-}
 
 section{
     max-width:1100px;
@@ -337,6 +262,81 @@ section p{
     line-height:1.8;
 }
 
+
+/*========== Carrusel ==========*/
+
+.carousel-section{
+    width:75%;
+    max-width:650px;
+    margin:60px auto;
+    box-shadow:none;
+}
+
+.carousel-section h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#04b484;
+    font-size:2rem;
+}
+
+.carousel{
+    position:relative;
+    overflow:hidden;
+    border-radius:18px;
+    border:6px solid #fced04;
+}
+
+.carousel-track{
+    position:relative;
+}
+
+.slide{
+    width:100%;
+    display:none;
+    border-radius:18px;
+}
+
+.slide.active{
+    display:block;
+}
+
+.slide{
+    aspect-ratio:16/9;
+    object-fit:contain;
+}
+
+.prev,
+.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#dbdbdb;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.prev:hover,
+.next:hover{
+    background:#3c9df4;
+    color:rgb(0, 0, 0);
+}
+
+.prev{
+    left:15px;
+    background:#dbdbdb;
+    color:rgb(0, 0, 0);
+    z-index:999;
+}
+
+.next{
+    right:15px;
+}
+
 footer {
     text-align: center;
     padding: 15px;
@@ -344,3 +344,32 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+/*Estilo imágenes de inicio*/
+/* Contenedor de la imagen */
+.img-style1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+/* Imagen */
+.img-style1 img{
+    width: 100%;
+    max-width: 600px;      /* Tamaño máximo */
+    height: 300px;         /* Alto fijo */
+    object-fit: contain;     /* Recorta sin deformar */
+    display: block;
+    border: 6px solid #fb6455;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    transition: transform .3s ease,
+                box-shadow .3s ease;
+}
+
+.img-style1 img:hover{
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0,0,0,.25);
+}
+
