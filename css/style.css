@@ -1,18 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-}
-
-@font-face {
-    font-family: "Open Sans";
-    src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-}
-
-body {
-    font-family: "Open Sans", sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
 
 /* ===== Imagen principal ===== */
@@ -38,6 +32,42 @@ body {
     box-shadow: 0 14px 30px rgba(0,0,0,.2);
 }
 
+/* Botón de registro */
+
+.register-container{
+    display:flex;
+    justify-content:center;
+    margin:25px auto 40px;
+}
+
+.register-btn{
+    display:inline-block;
+    padding:16px 32px;
+    background:#fff347;
+    color:#181818;
+    text-decoration:none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:1.05rem;
+    font-weight:600;
+    border-radius:999px;
+    transition:
+        background .3s ease,
+        transform .2s ease,
+        box-shadow .3s ease;
+
+    box-shadow:0 8px 20px #857f31;
+}
+
+.register-btn:hover{
+    background:#fced04;
+    transform:translateY(-3px);
+    box-shadow:0 12px 24px #666226;
+}
+
+.register-btn:active{
+    transform:translateY(0);
+}
+
 /* Contenedor del texto página de inicio */
 .text-container{
     max-width:1200px;
@@ -45,7 +75,7 @@ body {
     padding:30px;
     background:#ffffff;
     border-radius:16px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    box-shadow:0 8px 20px rgb(255, 255, 255);
 }
 
 /* Títulos página de inicio */
@@ -90,30 +120,29 @@ body {
 
 /* Estilo del botón de regreso */
 .return-container{
-    position:fixed;
-    bottom:20px;
-    left:20px;
-    z-index:999;
+    position: fixed;
+    top: clamp(85px, 10vw, 100px); /* Debajo de la navbar */
+    left: clamp(12px, 2vw, 20px);
+    z-index: 999;
 }
 
 .return-btn{
-    display:block;
-    transition:transform .2s ease;
+    display: block;
+    transition: transform .2s ease;
 }
 
 .return-btn img{
-    width:clamp(32px, 4vw, 55px);
+    width:clamp(32px,4vw,55px);
     height:auto;
     display:block;
-    transition:transform .2s ease;
 }
 
 .return-btn:hover{
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
 
 .return-btn:active{
-    transform:scale(0.95);
+    transform: scale(0.95);
 }
 
 .navbar {
@@ -171,24 +200,20 @@ body {
     padding:0;
 }
 
-/*Botón de nosotros*/
+.menu.show{
+    display:flex;
+    opacity:1;
+    transform:translateY(0);
+    pointer-events:auto;
+}
+
+/*Botones del menú*/
 .menu a,
-.dropdown-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 42px;
-    padding: 0 18px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    background: transparent;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color .3s ease;
+.dropdown-btn{
+    width:100%;
+    justify-content:flex-start;
+    padding:12px 15px;
+    border-radius:10px;
 }
 
 /*Botón de nosotros*/
@@ -203,16 +228,13 @@ body {
 }
 
 .submenu{
-    display:none;
-    position:absolute;
-    top:calc(100% + 8px);
-    left:0;
-    min-width:180px;
-    list-style:none;
-    background:#cacaca;
+    position:static;
+    width:100%;
+    margin-top:6px;
+    background:#ececec;
     border-radius:10px;
     overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    box-shadow:none;
 }
 
 .submenu li{
@@ -238,7 +260,6 @@ body {
   display: block;
 }
 
-
 section{
     max-width:1100px;
     width:95%;
@@ -246,7 +267,7 @@ section{
     padding:35px;
     background:#fff;
     border-radius:16px;
-    box-shadow:0 8px 20px rgba(0, 0, 0, 0.452);
+    box-shadow:0 8px 20px rgb(255, 255, 255);
 }
 
 section h2{
@@ -257,9 +278,41 @@ section h2{
 
 section p{
     text-align:justify;
-    text-justify:inter-word;
     font-size:1.1rem;
     line-height:1.8;
+}
+
+/* ===== Misión y Visión ===== */
+
+.mission-vision{
+    display:flex;
+    gap:30px;
+    width:95%;
+    max-width:1100px;
+    margin:40px auto;
+    align-items:stretch;
+}
+
+.mission-vision .card{
+    flex:1;
+    margin:0;
+}
+
+.mission-vision .card h2{
+    text-align:center;
+    color:#3c9df4;
+}
+
+.mission-vision .card p{
+    text-align:justify;
+}
+
+#mision,
+#vision,
+#valores,
+#contacto,
+#inicio{
+    scroll-margin-top:95px;
 }
 
 
@@ -294,15 +347,12 @@ section p{
     width:100%;
     display:none;
     border-radius:18px;
+    aspect-ratio:16/9;
+    object-fit:contain;
 }
 
 .slide.active{
     display:block;
-}
-
-.slide{
-    aspect-ratio:16/9;
-    object-fit:contain;
 }
 
 .prev,
@@ -328,8 +378,7 @@ section p{
 
 .prev{
     left:15px;
-    background:#dbdbdb;
-    color:rgb(0, 0, 0);
+    color:#000;
     z-index:999;
 }
 
@@ -359,7 +408,7 @@ footer {
     width: 100%;
     max-width: 600px;      /* Tamaño máximo */
     height: 300px;         /* Alto fijo */
-    object-fit: contain;     /* Recorta sin deformar */
+    object-fit: contain;     /* Muestra toda la imagen */
     display: block;
     border: 6px solid #fb6455;
     border-radius: 18px;

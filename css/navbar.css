@@ -1,4 +1,5 @@
 /* ===== NAVBAR ===== */
+
 .navbar{
     position: sticky;
     top: 0;
@@ -12,8 +13,8 @@
 }
 
 .navbar.scrolled{
-    padding: 6px 20px;
-    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+    padding:6px 20px;
+    box-shadow:0 6px 20px rgba(0,0,0,.15);
 }
 
 /* ===== LOGO ===== */
@@ -29,22 +30,60 @@
 
 /* ===== MENÚ ===== */
 .menu{
-    display: flex;
-    gap: 20px;
-    list-style: none;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    list-style:none;
 }
 
-.menu a{
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    border-radius: 8px;
-    transition: .3s;
+.menu li{
+    display:flex;
+    align-items:center;
 }
 
-.menu a:hover{
-    background: #ffbaba ;
+.menu a,
+.dropdown-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:42px;
+    padding:0 10px;
+    color:#000;
+    text-decoration:none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:16px;
+    font-weight:700;
+    background:transparent;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:background-color .3s ease;
+    white-space:nowrap;
+}
+
+.dropdown-btn{
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    outline:none;
+    margin:0;
+}
+
+.menu a:hover,
+.dropdown-btn:hover,
+.dropdown.active .dropdown-btn{
+    background:#ffbaba;
+}
+
+/* ===== BOTÓN DE UNIRSE EN EL NAVBAR ===== */
+.join-btn{
+    color:#000000 !important;
+    border-radius:25px;
+    font-weight:600;
+}
+
+.join-btn:hover{
+    background:#77b6ee !important;
 }
 
 /* ===== SUBMENÚ ===== */
@@ -75,30 +114,43 @@
     cursor: pointer;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px){
+@media (max-width:768px){
 
     .toggle{
-        display: block;
+        display:block;
+    }
+
+    .navbar{
+        flex-wrap:wrap;
+        padding:10px 15px;
     }
 
     .menu{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 15px;
-        width: 220px;
-        padding: 10px;
-        background: #dbdbdb;
-        border-radius: 10px;
+        display:flex;
+        gap:20px;
+        list-style:none;
     }
 
     .menu.show{
-        display: flex;
+        display:flex;
+    }
+
+    .menu a,
+    .dropdown-btn{
+        width:100%;
+        text-align:left;
+        padding:12px 15px;
     }
 
     .submenu{
-        position: static;
+        position:static;
+        width:100%;
+        margin-top:5px;
+        box-shadow:none;
     }
+
+    .logo img{
+        height:45px;
+    }
+
 }

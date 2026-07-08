@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Testimonios | MenteS-TEAM</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+<header>
+        <div class="logo1">
+            <img src="images/logo_mentesteam.png" alt="Logo de MenteS-TEAM">
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo_mentesteam.png" alt="Logo de MenteS-TEAM">
+            </a>
+        </div>
+
+        <!-- botón hamburguesa que despliega opciones -->
+        <button class="toggle" onclick="toggleMenu()">☰</button>
+
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Inicio</a></li>
+
+            <li class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(event)">Nosotros ▾</button>
+
+                <ul class="submenu">
+                    <li><a href="#mision">Misión</a></li>
+                    <li><a href="#vision">Visión</a></li>
+                    <li><a href="#valores">Valores</a></li>
+                </ul>
+            </li>
+
+            <li><a href="gallery.html">Galería</a></li>
+
+            <li>
+                <a href="https://forms.gle/bpR7nVA3zMNAT3978"
+                target="_blank"
+                class="join-btn">
+                Únete
+                </a>
+            </li>
+
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="return-container">
+        <a href="#" id="return-button" class="return-btn">
+            <img src="images/return_button.png" alt="Regresar">
+        </a>
+    </div>
+
+<section class="testimonials">
+    <h1>Lo que dicen nuestros participantes</h1>
+    <p>
+        Conoce la experiencia de algunos integrantes y voluntarios
+        de MenteS-TEAM.
+    </p>
+
+    <div class="testimonial-carousel">
+        <button class="testimonial-prev">&#10094;</button>
+        <div class="testimonial-track">
+            <!-- Testimonio 1 -->
+            <div class="testimonial active">
+                <img src="images/foto1.jpg">
+                <h3>Juan García</h3>
+                <h5>10 años | Participante</h5>
+                <p>
+                    Participar en MenteS-TEAM me permitió descubrir
+                    mi pasión por la ciencia y conocer personas increíbles.
+                </p>
+            </div>
+
+            <!-- Testimonio 2 -->
+            <div class="testimonial">
+                <img src="images/foto2.jpg">
+                <h3>Humberto Machado </h3>
+                <h5> 21 años | Mentor </h5>
+                <p>
+                    Aprendí muchísimo en los talleres y ahora quiero
+                    estudiar una ingeniería.
+                </p>
+            </div>
+
+            <!-- Testimonio 3 -->
+            <div class="testimonial">
+                <img src="images/foto3.jpg">
+                <h3>Andrea Machado </h3>
+                <h5> 19 años | Mentora </h5>
+                <p>
+                    El ambiente siempre fue muy amigable y motivador.
+                </p>
+            </div>
+        </div>
+
+        <button class="testimonial-next">&#10095;</button>
+
+    </div>
+
+</section>
+<footer>
+    <p>&copy; 2026 MenteS-TEAM</p>
+</footer>
+
+<script src="js/navbar.js"></script>
+<script src="js/main.js"></script>
+<script src="js/scroll_navbar.js"></script>
+
+</body>
+
+</html>

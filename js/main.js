@@ -39,3 +39,31 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 4000);
     }
 });
+
+//Testimonios
+const testimonials = document.querySelectorAll(".testimonial");
+const nextTestimonial = document.querySelector(".testimonial-next");
+const prevTestimonial = document.querySelector(".testimonial-prev");
+
+if(testimonials.length){
+    let current = 0;
+    function showTestimonial(i){
+        testimonials.forEach(card => card.classList.remove("active"));
+        testimonials[i].classList.add("active");
+    }
+
+    nextTestimonial.addEventListener("click",()=>{
+        current = (current + 1) % testimonials.length;
+        showTestimonial(current);
+    });
+
+    prevTestimonial.addEventListener("click",()=>{
+        current = (current - 1 + testimonials.length) % testimonials.length;
+        showTestimonial(current);
+    });
+
+    setInterval(()=>{
+        current = (current + 1) % testimonials.length;
+        showTestimonial(current);
+    },13000);
+}
