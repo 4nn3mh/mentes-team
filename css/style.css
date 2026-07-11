@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins-v24-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -6,13 +20,13 @@ html{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ===== Imagen principal ===== */
 .hero-image{
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 35px auto;
 }
 
@@ -43,10 +57,10 @@ html{
 .register-btn{
     display:inline-block;
     padding:16px 32px;
-    background:#fff347;
-    color:#181818;
+    background:#fb6455;
+    color:#ffffff;
     text-decoration:none;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-size:1.05rem;
     font-weight:600;
     border-radius:999px;
@@ -55,13 +69,13 @@ html{
         transform .2s ease,
         box-shadow .3s ease;
 
-    box-shadow:0 8px 20px #857f31;
+    box-shadow:0 8px 20px #853131;
 }
 
 .register-btn:hover{
-    background:#fced04;
+    background:#ff4737;
     transform:translateY(-3px);
-    box-shadow:0 12px 24px #666226;
+    box-shadow:0 12px 24px #662626;
 }
 
 .register-btn:active{
@@ -84,6 +98,15 @@ html{
     margin-bottom:20px;
     text-align:center;
     font-size:2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 700;
 }
 
 /* Párrafos página de inicio */
@@ -336,7 +359,7 @@ section p{
     position:relative;
     overflow:hidden;
     border-radius:18px;
-    border:6px solid #fced04;
+    border:2px solid #fced04;
 }
 
 .carousel-track{
@@ -386,6 +409,80 @@ section p{
     right:15px;
 }
 
+/* Sección de impacto */
+
+.impact{
+    width:95%;
+    max-width:1200px;
+    margin:70px auto;
+    text-align:center;
+}
+
+.impact h2{
+    font-size:2.3rem;
+    color:#3c9df4;
+    margin-bottom:15px;
+}
+
+.impact > p{
+    max-width:750px;
+    margin:0 auto 40px;
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#555;
+}
+
+.impact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.impact-card{
+    padding:35px 20px;
+    border-radius:20px;
+    color:white;
+    transition:.3s;
+}
+
+.impact-card:hover{
+    transform:translateY(-8px);
+}
+
+.impact-card h3{
+    font-size:2.7rem;
+    margin-bottom:12px;
+}
+
+.impact-card p{
+    font-size:1rem;
+    line-height:1.6;
+}
+
+.color1{
+    background:#3C9DF4;
+}
+
+.color2{
+    background:#04B484;
+}
+
+.color3{
+    background:#FB6455;
+}
+
+.color4{
+    background:#F7B731;
+}
+
+.color5{
+    background:#7C4DFF;
+}
+
+.color6{
+    background:#b9437e;
+}
+
 footer {
     text-align: center;
     padding: 15px;
@@ -410,7 +507,7 @@ footer {
     height: 300px;         /* Alto fijo */
     object-fit: contain;     /* Muestra toda la imagen */
     display: block;
-    border: 6px solid #fb6455;
+    border: 1px solid #000000;
     border-radius: 18px;
     box-shadow: 0 8px 20px rgba(0,0,0,.15);
     transition: transform .3s ease,
@@ -422,3 +519,12 @@ footer {
     box-shadow: 0 12px 25px rgba(0,0,0,.25);
 }
 
+/* Para que el navbar no tape los títulos */
+#inicio,
+#mision,
+#vision,
+#valores,
+#carousel-section,
+#impact{
+    scroll-margin-top: 20px;
+}
