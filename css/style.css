@@ -274,7 +274,7 @@ h6{
   font-size: 25px;
   background: none;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 
@@ -330,11 +330,7 @@ section p{
     text-align:justify;
 }
 
-#mision,
-#vision,
-#valores,
-#contacto,
-#inicio{
+.anchor{
     scroll-margin-top:95px;
 }
 
@@ -523,8 +519,107 @@ footer {
 #inicio,
 #mision,
 #vision,
-#valores,
+#values,
 #carousel-section,
-#impact{
-    scroll-margin-top: 20px;
+#impact,
+#donations{
+    scroll-margin-top: 95px;
+}
+
+/*Donaciones*/
+
+.donation-section{
+    width:95%;
+    max-width:1100px;
+    margin:70px auto;
+    text-align:center;
+}
+
+.donation-section h2{
+    color:#04B484;
+    font-size:2.3rem;
+    margin-bottom:20px;
+}
+
+.donation-description{
+    max-width:750px;
+    margin:0 auto 40px;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.donation-card{
+    background:white;
+    border:4px solid #04B484;
+    border-radius:22px;
+    padding:40px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.donation-card h3{
+    color:#3c9df4;
+    margin-bottom:30px;
+    font-size:1.8rem;
+}
+
+.bank-info p{
+    margin:10px 0;
+    font-size:1.1rem;
+}
+
+.copy-box{
+    margin:15px auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.copy-box span{
+    background:#f4f4f4;
+    padding:12px 18px;
+    border-radius:12px;
+    font-weight:bold;
+    letter-spacing:1px;
+    font-size:1.1rem;
+}
+
+.copy-box button{
+    background:#7C4DFF;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:1rem;
+}
+
+.copy-box button:hover{
+    background:#3c9df4;
+}
+
+/*=========================
+      MENSAJE COPIADO
+=========================*/
+
+.copy-toast{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#04b46b;
+    color:rgb(255, 255, 255);
+    padding:14px 22px;
+    border-radius:12px;
+    font-weight:bold;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    z-index:9999;
+}
+
+.copy-toast.show{
+    opacity:1;
+    visibility:visible;
 }

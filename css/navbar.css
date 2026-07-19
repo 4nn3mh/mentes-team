@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 25px;
-    background: #dbdbdb;
+    background: #cecece;
     transition: .3s;
 }
 
@@ -31,23 +31,23 @@
 /* ===== MENÚ ===== */
 .menu{
     display:flex;
-    align-items:center;
+    display:flex;
     gap:10px;
     list-style:none;
 }
 
 .menu li{
-    display:flex;
-    align-items:center;
+    width:100%;
 }
 
 .menu a,
 .dropdown-btn{
+    width:100%;
+    justify-content:flex-start;
     display:flex;
     align-items:center;
-    justify-content:center;
     height:42px;
-    padding:0 10px;
+    padding:8px 12px;
     color:#000;
     text-decoration:none;
     font-family: 'Poppins', sans-serif;

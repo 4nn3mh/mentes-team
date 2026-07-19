@@ -67,3 +67,17 @@ if(testimonials.length){
         showTestimonial(current);
     },13000);
 }
+
+//Funcionalidad de donaciones (copiar CLABE)
+function copyCLABE(){
+    const clabe = document
+        .getElementById("clabe")
+        .textContent
+        .trim();
+    navigator.clipboard.writeText(clabe);
+    const toast = document.getElementById("copy-toast");
+    toast.classList.add("show");
+    setTimeout(()=>{
+        toast.classList.remove("show");
+    },2500);
+}

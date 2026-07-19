@@ -42,7 +42,7 @@
                 <ul class="submenu">
                     <li><a href="#mision">Misión</a></li>
                     <li><a href="#vision">Visión</a></li>
-                    <li><a href="#valores">Valores</a></li>
+                    <li><a href="#values">Valores</a></li>
                     <li><a href="#carousel-section">Carrusel de fotos</a></li>
                     <li><a href="#impact">Impacto</a></li>
                 </ul>
@@ -60,6 +60,8 @@
 
             <li><a href="testimonials.html">Testimonios</a></li>
 
+            <li><a href="#donations">¡Quiero donar!</a></li>
+            
             <li><a href="contact.html">Contacto</a></li>
         </ul>
     </nav>
@@ -82,7 +84,7 @@
     </section>
 
     <div class="mission-vision">
-        <section id="mision" class="card">
+        <section id="mision" class="card anchor">
             <h2>Misión</h2>
             <p>
                 Contribuir, a través de actividades y recursos
@@ -97,7 +99,7 @@
                 <img src="images/foto4.png" alt="Misión">
             </div>
         </section>
-        <section id="vision" class="card">
+        <section id="vision" class="card anchor">
             <h2>Visión</h2>
             <p>
                 Ser una institución reconocida como un referente y 
@@ -111,13 +113,13 @@
         </section>
     </div>
 
-    <section id="valores" class="text-container">
+    <section id="values" class="text-container anchor">
         <h2>Valores</h2>
         <p>*Añadir valores<br>
         </p>
     </section>
 
-    <section class="carousel-section" id="carousel-section">
+    <section class="carousel-section" id="carousel-section anchor">
     <h2>Momentos MenteS-TEAM</h2>
     <div class="carousel">
         <button class="prev">&#10094;</button>
@@ -133,7 +135,7 @@
     </div>
     </section>
 
-    <section class="impact" id="impact">
+    <section class="impact" id="impact anchor">
     <h2>Nuestro impacto</h2>
     <p>
         Gracias al esfuerzo de voluntarios, instituciones y participantes,
@@ -168,6 +170,43 @@
     </div>
     </section>
 
+    <section id="donations" class="donation-section">
+
+    <h2>Apóyanos con una donación 💜</h2>
+
+    <p class="donation-description">
+        Tu apoyo nos permite continuar impulsando proyectos científicos,
+        talleres, ferias de ciencia y actividades STEAM para niñas, niños y jóvenes.
+        Cada aportación hace una diferencia.
+    </p>
+
+    <div class="donation-card">
+        <h3>Cuenta bancaria</h3>
+        <div class="bank-info">
+
+            <p><strong>Asociación:</strong></p>
+            <p>MenteS-TEAM Somos Ciencia y Tecnología A.C.</p>
+
+            <p><strong>Banco</strong></p>
+            <p>BANORTE</p>
+
+            <p><strong>CLABE</strong></p>
+
+            <div class="copy-box">
+                <span id="clabe">
+                    072730013067977319
+                </span>
+
+                <button type="button" onclick="copyCLABE()">
+                    Copiar
+                </button>
+            </div>
+            <p><strong>No. de cuenta</strong></p>
+            <p>1306797731</p>
+        </div>
+    </div>
+    </section>
+
     <footer>
         <p>&copy; 2026 MenteS-TEAM. Todos los derechos reservados.</p>
     </footer>
@@ -175,5 +214,9 @@
     <script src="js/main.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/scroll_navbar.js"></script>
+
+    <div id="copy-toast" class="copy-toast">
+        ✅ ¡CLABE copiada al portapapeles!
+    </div>
 </body>
 </html>
