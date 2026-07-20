@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Niveles | MenteS-TEAM</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/levels.css">
+
+</head>
+
+<body>
+<header>
+        <div class="logo1">
+            <img src="images/logo_mentesteam.png" alt="Logo de MenteS-TEAM">
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo_mentesteam.png" alt="Logo de MenteS-TEAM">
+            </a>
+        </div>
+
+        <!-- botón hamburguesa que despliega opciones -->
+        <button class="toggle" onclick="toggleMenu()">☰</button>
+
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Inicio</a></li>
+
+            <li class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(event)">Nosotros ▾</button>
+
+                <ul class="submenu">
+                    <li><a href="index.html#mision">Misión</a></li>
+                    <li><a href="index.html#vision">Visión</a></li>
+                    <li><a href="index.html#values">Valores</a></li>
+                    <li><a href="levels.html">Niveles de MenteS-TEAM</a></li>
+                    <li><a href="index.html#carousel-section">Carrusel de fotos</a></li>
+                    <li><a href="index.html#impact">Impacto</a></li>
+                </ul>
+            </li>
+
+            <li><a href="gallery.html">Galería</a></li>
+
+            <li>
+                <a href="https://forms.gle/bpR7nVA3zMNAT3978"
+                target="_blank"
+                class="join-btn">
+                Únete
+                </a>
+            </li>
+
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="return-container">
+        <a href="#" id="return-button" class="return-btn">
+            <img src="images/return_button.png" alt="Regresar">
+        </a>
+    </div>
+
+    <section class="levels">
+
+    <div class="levels-container">
+
+        <h1>Niveles MenteS-TEAM</h1>
+
+        <h4>ATENEOS MENTES-TEAM</h4>
+
+        <p class="levels-subtitle">
+            Nuestro programa acompaña a niñas, niños y adolescentes
+            desde la exploración de intereses hasta el desarrollo de
+            proyectos científicos.
+        </p>
+
+        <div class="timeline">
+
+            <!-- Columna izquierda -->
+            <div class="left-column">
+
+                <div class="info-card">
+                    <h2>Nivel I</h2>
+
+                    <p>
+                        Actividades de exploración y detección
+                        de intereses, visitas académicas,
+                        talleres y actividades experimentales.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h2>Nivel II</h2>
+
+                    <p>
+                        Desarrollo de habilidades mediante
+                        proyectos y participación en eventos científicos.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="center-column">
+
+    <!-- Tarjetas de niveles -->
+    <div class="levels-row">
+
+        <div class="level-card pink">
+            <h3>MenteS-TEAM I</h3>
+            <span>5-7 años</span>
+        </div>
+
+        <div class="level-card orange">
+            <h3>MenteS-TEAM II</h3>
+            <span>8-10 años</span>
+        </div>
+
+        <div class="level-card green">
+            <h3>MenteS-TEAM III</h3>
+            <span>11-13 años</span>
+        </div>
+
+    </div>
+
+    <!-- Tarjeta de proyectos -->
+    <div class="projects-wrapper">
+
+        <div class="project-card">
+
+            <h2>MenteS-TEAM Proyectos</h2>
+
+            <ul>
+                <li>A partir de los 5 años</li>
+                <li>13 a 18 años</li>
+                <li>Investigación científica</li>
+                <li>Maquetas</li>
+                <li>Carteles</li>
+                <li>Experimentos</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+        <!-- BENEFICIOS -->
+
+        <section class="benefits-section">
+
+            <h2>¿Qué obtiene un participante?</h2>
+
+            <div class="benefits-container">
+
+                <div class="benefits-grid">
+
+                    <div class="benefit">🌱 Formación para la vida</div>
+
+                    <div class="benefit">🎯 Orientación vocacional</div>
+
+                    <div class="benefit">💡 Claridad en gustos e intereses</div>
+
+                    <div class="benefit">🚀 Toma de decisiones</div>
+
+                    <div class="benefit">🎓 Becas universitarias</div>
+
+                    <div class="benefit">🔬 Desarrollo científico</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <p>&copy; 2026 MenteS-TEAM</p>
+</footer>
+
+<script src="js/navbar.js"></script>
+<script src="js/main.js"></script>
+<script src="js/scroll_navbar.js"></script>
+
+</body>
+
+</html>

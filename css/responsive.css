@@ -1,3 +1,17 @@
+@media (max-width:1300px){
+    .timeline{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .left-column,
+    .center-column{
+        max-width:700px;
+        width:100%;
+        margin:0 auto;
+    }
+}
+
 @media (max-width:1100px){
 
     /* Imagen principal */
@@ -220,4 +234,118 @@
         word-break:break-all;
     }
 
+
+    /*Niveles*/
+    .levels{
+        width:95%;
+    }
+
+    .levels-row{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .project-card{
+        max-width:100%;
+    }
+
+    /* Tarjetas de los niveles */
+    .level-card{
+        width:100%;
+    }
+
+    .levels-row{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* Proyecto */
+    .project-card{
+        width:100%;
+    }
+
+    /* Beneficios */
+    .benefits-container{
+        max-width:900px;
+        margin:50px auto;
+    }
+
+
+    .benefits-section{
+        margin-top:50px;
+    }
+
+    .benefits-grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+        gap:20px;
+    }
+
+    .benefit{
+        padding:18px;
+        text-align:center;
+    }
+}
+
+@media (max-width:768px){
+    .levels-row{
+        grid-template-columns:1fr;
+    }
+
+    .levels h1{
+        font-size:2rem;
+    }
+
+    .levels-subtitle{
+        font-size:1rem;
+    }
+
+    .benefits-grid{
+        grid-template-columns:1fr;
+    }
+
+    .benefit{
+        min-height:80px;
+        font-size:1rem;
+    }
+
+    .timeline{
+        gap:20px;
+    }
+
+    .left-column,
+    .center-column{
+        max-width:100%;
+    }
+
+    .project-card{
+        width:100%;
+        padding:20px;
+    }
+
+    .level-card{
+        padding:20px;
+    }
+
+    .info-card{
+        padding:20px;
+    }
+}
+
+@media (max-width:480px){
+    .levels h1{
+        font-size:1.7rem;
+    }
+
+    .levels-subtitle{
+        font-size:.95rem;
+    }
+
+    .level-card,
+    .info-card,
+    .project-card{
+        padding:18px;
+    }
+
+    .benefit{
+        padding:16px;
+    }
 }
