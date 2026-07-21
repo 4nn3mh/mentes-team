@@ -96,7 +96,9 @@
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 180px;
+    min-width: 280px;
+    width: max-content;
+    max-width: 320px;
     background: #dbdbdb;
     border-radius: 10px;
 }

@@ -285,6 +285,33 @@
     }
 }
 
+
+/* Tablets - Resultados */
+@media (max-width:900px){
+    .results{
+        width:94%;
+    }
+    .results p{
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+    .photo-row{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /*Socios*/
+
+    .partner{
+        gap:25px;
+    }
+
+    .partner-photo{
+        width:150px;
+        height:150px;
+    }
+}
+
 @media (max-width:768px){
     .levels-row{
         grid-template-columns:1fr;
@@ -330,6 +357,72 @@
     }
 }
 
+/*Socios*/
+@media (max-width:700px){
+    .partner{
+        flex-direction:column;
+        text-align:center;
+        padding:25px;
+    }
+
+    .partner-info{
+        width:100%;
+    }
+
+    .partner-info h2{
+        margin-top:10px;
+    }
+
+    .partner-info p{
+        text-align:justify;
+    }
+
+    .partner-photo{
+        width:170px;
+        height:170px;
+    }
+}
+
+
+/* Celulares - Resultados*/
+
+@media (max-width:600px){
+    .results{
+        width:95%;
+    }
+
+    .results h1{
+        font-size:2rem;
+    }
+
+    .results h2{
+        font-size:1.45rem;
+    }
+
+    .results p{
+        font-size:.98rem;
+    }
+
+    .photo-row{
+        grid-template-columns:1fr;
+    }
+
+    .photo-row img{
+        height:210px;
+    }
+
+    .award{
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+
+    .close{
+        font-size:42px;
+        right:20px;
+    }
+}
+
 @media (max-width:480px){
     .levels h1{
         font-size:1.7rem;
@@ -347,5 +440,23 @@
 
     .benefit{
         padding:16px;
+    }
+
+    /*Socios*/
+    .partner{
+        padding:20px;
+    }
+
+    .partner-photo{
+        width:140px;
+        height:140px;
+    }
+
+    .partner-info h2{
+        font-size:1.6rem;
+    }
+
+    .partner-info p{
+        font-size:1rem;
     }
 }

@@ -1,0 +1,104 @@
+/*Socios*/
+
+.partners{
+    width:min(92%,1100px);
+    margin:50px auto;
+}
+
+.partners h1{
+    text-align:center;
+    color:#3c9df4;
+    font-size:clamp(2rem,4vw,3rem);
+    margin-bottom:20px;
+}
+
+.partners-intro{
+    text-align:justify;
+    font-size:1.05rem;
+    line-height:1.9;
+    margin-bottom:50px;
+}
+
+/*Cada socio*/
+
+.partner{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    margin-bottom:45px;
+    padding:30px;
+    border-radius:20px;
+    background:white;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.partner:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+/*Foto*/
+
+.partner-photo{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    padding:8px;
+    flex-shrink:0;
+}
+
+.partner-photo img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* Bordes */
+
+.purple{
+    border:7px solid #8e44ad;
+}
+
+.blue{
+    border:7px solid #3498db;
+}
+
+.green{
+    border:7px solid #2ecc71;
+}
+
+.orange{
+    border:7px solid #f39c12;
+}
+
+.red{
+    border:7px solid #e74c3c;
+}
+
+/*Información*/
+
+.partner-info{
+    flex:1;
+}
+
+.partner-info h2{
+    color:#3c9df4;
+    margin-bottom:5px;
+    font-size:2rem;
+}
+
+.partner-info h4{
+    color:#777;
+    font-size:1rem;
+    margin-bottom:20px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.partner-info p{
+    text-align:justify;
+    line-height:1.9;
+    font-size:1.05rem;
+}

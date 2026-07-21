@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resultados | MenteS-TEAM</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/results.css">
+
+</head>
+
+<body>
+<header>
+        <div class="logo1">
+            <img src="images/logo_mentesteam.png" alt="Logo de MenteS-TEAM">
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo_mentesteam.png" alt="Logo de MenteS-TEAM">
+            </a>
+        </div>
+
+        <!-- botón hamburguesa que despliega opciones -->
+        <button class="toggle" onclick="toggleMenu()">☰</button>
+
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Inicio</a></li>
+
+            <li class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(event)">Nosotros ▾</button>
+
+                <ul class="submenu">
+                    <li><a href="index.html#mision">Misión</a></li>
+                    <li><a href="index.html#vision">Visión</a></li>
+                    <li><a href="index.html#values">Valores</a></li>
+                    <li><a href="partners.html">Socios</a></li>
+                    <li><a href="levels.html">Niveles de MenteS-TEAM</a></li>
+                    <li><a href="index.html#carousel-section">Carrusel de fotos</a></li>
+                    <li><a href="index.html#impact">Impacto</a></li>
+                </ul>
+            </li>
+
+            <li><a href="gallery.html">Galería</a></li>
+
+            <li>
+                <a href="https://forms.gle/bpR7nVA3zMNAT3978"
+                target="_blank"
+                class="join-btn">
+                Únete
+                </a>
+            </li>
+
+            <li><a href="testimonials.html">Testimonios</a></li>
+
+            <li><a href="index.html#donations" class="donate">¡Quiero donar!</a></li>
+
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="return-container">
+        <a href="#" id="return-button" class="return-btn">
+            <img src="images/return_button.png" alt="Regresar">
+        </a>
+    </div>
+
+    <section class="results">
+
+    <h1>Resultados obtenidos en MenteS-TEAM</h1>
+
+    <p class="intro">
+        A lo largo de los años, las y los participantes de MenteS-TEAM
+        han representado orgullosamente a la organización en concursos,
+        ferias científicas y eventos académicos de distintos niveles,
+        obteniendo importantes reconocimientos.
+    </p>
+
+    <!-- ================= ESTATALES ================= -->
+
+    <h2>Estatales</h2>
+
+    <p>
+        Participación en concursos científicos, olimpiadas y ferias
+        estatales fomentando el desarrollo de habilidades de investigación,
+        innovación y divulgación científica.
+    </p>
+
+    <h3 class="award" onclick="openImage('images/resultados/estatal1.jpg')">
+        🥇🥇2 Primeros lugares | Categoría expertos
+    </h3>
+
+    <div class="photo-row">
+
+        <img src="images/resultados/estatal1.jpg"
+             onclick="openImage(this.src)">
+
+        <img src="images/resultados/estatal2.jpg"
+             onclick="openImage(this.src)">
+
+    </div>
+
+    <h3 class="award" onclick="openImage('images/resultados/estatal1.jpg')">
+        🥇1 Primer lugar | Categoría sabios
+    </h3>
+
+    <h3 class="award" onclick="openImage('images/resultados/estatal1.jpg')">
+        🥉🥉🥉3 Terceros lugares | Categoría sabios
+    </h3>
+
+    <h3 class="award" onclick="openImage('images/resultados/estatal1.jpg')">
+        🏅ExpoCiencias Sinaloa | 1 acreditación nacional
+    </h3>
+
+    <h3 class="award" onclick="openImage('images/resultados/estatal1.jpg')">
+        🏅🏅INFOMATRIX Pacífico | 2 acreditaciones nacionales
+    </h3>
+
+    <!-- ================= NACIONALES ================= -->
+
+    <h2>Nacionales</h2>
+
+    <p>
+        Integrantes de MenteS-TEAM han representado a Sinaloa
+        en eventos nacionales obteniendo resultados destacados.
+    </p>
+
+    <h3 class="award" onclick="openImage('images/resultados/nacional1.jpg')">
+        🏅🏅 2 acreditaciones internacionales
+    </h3>
+
+    <!-- ================= INTERNACIONALES ================= -->
+
+    <h2>Internacionales</h2>
+
+    <p>
+        MenteS-TEAM también ha logrado representación en competencias
+        internacionales promoviendo el talento científico mexicano.
+    </p>
+
+    <h3 class="award" onclick="openImage('images/resultados/inter1.jpg')">
+        🥈🥈2 medallas de plata
+    </h3>
+
+    <div class="photo-row">
+
+        <img src="images/resultados/inter1.jpg"
+             onclick="openImage(this.src)">
+
+    </div>
+
+    <!-- ================= BECAS ================= -->
+
+    <h2>Becas otorgadas</h2>
+
+    <p>
+        📜Beca otorgada por la Fundación Gallagher del 100% en el Tecnológico de Monterrey
+    </p>
+
+    <div class="photo-row">
+
+        <img src="images/resultados/beca1.jpg"
+             onclick="openImage(this.src)">
+
+    </div>
+
+    <!-- ================= RECONOCIMIENTOS ================= -->
+
+    <h2>Reconocimientos</h2>
+
+    <p>
+        📜Premio al Mérito Juvenil otorgado por el H. Congreso del Estado de Sinaloa en el ámbito Académico, Científico y Tecnológico 2022
+    </p>
+
+    <div class="photo-row">
+
+        <img src="images/resultados/reconocimiento1.jpg"
+             onclick="openImage(this.src)">
+
+    </div>
+
+</section>
+
+
+<!-- Ventana emergente -->
+
+<div id="lightbox" class="lightbox">
+
+    <span class="close" onclick="closeImage()">&times;</span>
+
+    <img id="lightbox-img">
+
+</div>
+
+
+
+<footer>
+    <p>&copy; 2026 MenteS-TEAM. Todos los derechos reservados.</p>
+</footer>
+
+<script src="js/navbar.js"></script>
+<script src="js/main.js"></script>
+<script src="js/scroll_navbar.js"></script>
+<script src="js/results.js"></script>
+
+</body>
+
+</html>

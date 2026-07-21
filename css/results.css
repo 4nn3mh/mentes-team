@@ -1,0 +1,121 @@
+/* ==========================
+   RESULTADOS
+========================== */
+
+.results{
+    width: min(92%, 1200px);
+    margin: 50px auto;
+    padding: 0 10px;
+}
+
+.results h1{
+    font-size: clamp(2rem, 4vw, 3rem);
+    color:#3c9df4;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.results h2{
+    margin:55px 0 20px;
+    padding-left:15px;
+    border-left:8px solid #04b484;
+    color:#04b484;
+    font-size:clamp(1.5rem,3vw,2rem);
+}
+
+.results p{
+    text-align:justify;
+    line-height:1.9;
+    font-size:1.08rem;
+}
+
+.intro{
+    margin-bottom:50px;
+}
+
+
+/* ==========================
+   PREMIOS
+========================== */
+
+.award{
+    display:inline-block;
+    margin:25px 0;
+    padding:12px 18px;
+    background:#fff4d8;
+    border-radius:30px;
+    color:#d35400;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.award:hover{
+    background:#ffe6b0;
+    color:#c0392b;
+    transform:translateX(8px);
+}
+
+
+/* ==========================
+   GALERÍA DE FOTOS
+========================== */
+
+.photo-row{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-bottom:45px;
+}
+
+.photo-row img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+}
+
+.photo-row img:hover{
+    transform:scale(1.03);
+}
+
+
+/* ==========================
+   LIGHTBOX
+========================== */
+
+.lightbox{
+    position:fixed;
+    inset:0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.88);
+    z-index:9999;
+    padding:20px;
+}
+
+.lightbox img{
+    width:min(90vw,900px);
+    max-height:85vh;
+    object-fit:contain;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:35px;
+    font-size:55px;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.close:hover{
+    transform:scale(1.15);
+}
