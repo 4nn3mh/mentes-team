@@ -328,8 +328,8 @@ section p{
 /*========== Carrusel ==========*/
 
 .carousel-section{
-    width:75%;
-    max-width:650px;
+    width:100%;
+    max-width:750px;
     margin:60px auto;
     box-shadow:none;
 }
@@ -415,7 +415,7 @@ section p{
     margin:0 auto 40px;
     font-size:1.1rem;
     line-height:1.8;
-    color:#555;
+    color:#000000;
 }
 
 .impact-grid{
@@ -489,7 +489,7 @@ footer {
 /* Imagen */
 .img-style1 img{
     width: 100%;
-    max-width: 600px;      /* Tamaño máximo */
+    max-width: 400px;      /* Tamaño máximo */
     height: 300px;         /* Alto fijo */
     object-fit: contain;     /* Muestra toda la imagen */
     display: block;
@@ -504,17 +504,6 @@ footer {
     transform: scale(1.03);
     box-shadow: 0 12px 25px rgba(0,0,0,.25);
 }
-
-/* Para que el navbar no tape los títulos
-#inicio,
-#mision,
-#vision,
-#values,
-#carousel-section,
-#impact,
-#donations{
-    scroll-margin-top: 95px;
-}*/
 
 /*Donaciones*/
 

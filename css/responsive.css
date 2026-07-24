@@ -155,8 +155,12 @@
     }
 
     /* Galería */
+    .flip-card{
+        height: 380px;
+    }
+
     .flip-card-inner{
-        height:260px;
+        height:100%;
     }
 
     /* Carrusel */
